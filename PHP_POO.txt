@@ -1,0 +1,69 @@
+
+<?php
+
+//Superclasse POO
+class Animal{
+    
+    public function Locomover(){
+        echo "Todos os animais se locomovem.";
+    }
+}
+
+//Herança POO
+class Cachorro extends Animal{
+
+    public function Correr(){
+        $this->Locomover();
+        echo "<br>";
+        echo "O cachorro que pertece a familia dos mamíferos se locomove correndo!";
+        echo "<hr>";
+    }
+}
+
+//Herança POO
+class Jacaré extends Animal{
+       
+    public function Rastejar(){
+        $this->Locomover();
+        echo "<br>";
+        echo "O jacaré que pertece a familia dos répteis se locomove rastejando!";
+        echo "<hr>";
+    }
+}
+
+//Herança POO
+class Gavião extends Animal{
+        
+    public function Voar(){
+        $this->Locomover();
+        echo "<br>";
+        echo "O gavião que pertece a familia das aves se locomove voando!";
+        echo "<hr>";
+    }
+}
+
+//Herança POO
+class Tubarão extends Animal{
+
+    public function Nadar(){
+        $this->Locomover();
+        echo "<br>";
+        echo "O tubarão que pertece a familia dos peixes se locomove nadando!";
+        echo "<hr>";
+    }
+}
+
+//Instanciando Classes
+$cachorro = new Cachorro();
+$cachorro-> Correr();
+
+$jacaré = new Jacaré();
+$jacaré-> Rastejar();
+
+$gavião = new Gavião();
+$gavião-> Voar();
+
+$tubarão = new Tubarão();
+$tubarão-> Nadar();
+
+?>
